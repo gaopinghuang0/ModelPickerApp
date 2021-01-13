@@ -9,19 +9,26 @@
 /* Begin PBXBuildFile section */
 		FB03A17925AFB9C4001C2129 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03A17825AFB9C4001C2129 /* AppDelegate.swift */; };
 		FB03A17B25AFB9C4001C2129 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03A17A25AFB9C4001C2129 /* ContentView.swift */; };
-		FB03A17D25AFB9C4001C2129 /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FB03A17C25AFB9C4001C2129 /* Experience.rcproject */; };
 		FB03A17F25AFB9C6001C2129 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03A17E25AFB9C6001C2129 /* Assets.xcassets */; };
 		FB03A18225AFB9C6001C2129 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18125AFB9C6001C2129 /* Preview Assets.xcassets */; };
+		FB03A19025AFBC34001C2129 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18C25AFBC33001C2129 /* teapot.usdz */; };
+		FB03A19125AFBC34001C2129 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18D25AFBC33001C2129 /* toy_robot_vintage.usdz */; };
+		FB03A19225AFBC34001C2129 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18E25AFBC34001C2129 /* toy_biplane.usdz */; };
+		FB03A19325AFBC34001C2129 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18F25AFBC34001C2129 /* fender_stratocaster.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FB03A17525AFB9C4001C2129 /* ModelPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModelPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB03A17825AFB9C4001C2129 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB03A17A25AFB9C4001C2129 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FB03A17C25AFB9C4001C2129 /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		FB03A17E25AFB9C6001C2129 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB03A18125AFB9C6001C2129 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB03A18325AFB9C6001C2129 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB03A18C25AFBC33001C2129 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		FB03A18D25AFBC33001C2129 /* toy_robot_vintage.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_robot_vintage.usdz; sourceTree = "<group>"; };
+		FB03A18E25AFBC34001C2129 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
+		FB03A18F25AFBC34001C2129 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		FB03A19625AFBFCC001C2129 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,7 @@
 		FB03A16C25AFB9C4001C2129 = {
 			isa = PBXGroup;
 			children = (
+				FB03A19625AFBFCC001C2129 /* README.md */,
 				FB03A17725AFB9C4001C2129 /* ModelPickerApp */,
 				FB03A17625AFB9C4001C2129 /* Products */,
 			);
@@ -54,9 +62,9 @@
 		FB03A17725AFB9C4001C2129 /* ModelPickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB03A18B25AFBC09001C2129 /* 3DModels */,
 				FB03A17825AFB9C4001C2129 /* AppDelegate.swift */,
 				FB03A17A25AFB9C4001C2129 /* ContentView.swift */,
-				FB03A17C25AFB9C4001C2129 /* Experience.rcproject */,
 				FB03A17E25AFB9C6001C2129 /* Assets.xcassets */,
 				FB03A18325AFB9C6001C2129 /* Info.plist */,
 				FB03A18025AFB9C6001C2129 /* Preview Content */,
@@ -70,6 +78,17 @@
 				FB03A18125AFB9C6001C2129 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB03A18B25AFBC09001C2129 /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB03A18F25AFBC34001C2129 /* fender_stratocaster.usdz */,
+				FB03A18C25AFBC33001C2129 /* teapot.usdz */,
+				FB03A18E25AFBC34001C2129 /* toy_biplane.usdz */,
+				FB03A18D25AFBC33001C2129 /* toy_robot_vintage.usdz */,
+			);
+			path = 3DModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +148,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB03A19125AFBC34001C2129 /* toy_robot_vintage.usdz in Resources */,
+				FB03A19225AFBC34001C2129 /* toy_biplane.usdz in Resources */,
+				FB03A19325AFBC34001C2129 /* fender_stratocaster.usdz in Resources */,
+				FB03A19025AFBC34001C2129 /* teapot.usdz in Resources */,
 				FB03A18225AFB9C6001C2129 /* Preview Assets.xcassets in Resources */,
 				FB03A17F25AFB9C6001C2129 /* Assets.xcassets in Resources */,
 			);
@@ -143,7 +166,6 @@
 			files = (
 				FB03A17B25AFB9C4001C2129 /* ContentView.swift in Sources */,
 				FB03A17925AFB9C4001C2129 /* AppDelegate.swift in Sources */,
-				FB03A17D25AFB9C4001C2129 /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
