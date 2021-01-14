@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,10 @@
 		FB03A19125AFBC34001C2129 /* toy_robot_vintage.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18D25AFBC33001C2129 /* toy_robot_vintage.usdz */; };
 		FB03A19225AFBC34001C2129 /* toy_biplane.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18E25AFBC34001C2129 /* toy_biplane.usdz */; };
 		FB03A19325AFBC34001C2129 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = FB03A18F25AFBC34001C2129 /* fender_stratocaster.usdz */; };
+		FB03A19925AFC40C001C2129 /* ModelPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB03A19825AFC40C001C2129 /* ModelPickerView.swift */; };
+		FB2506C825AFDC91003CBFCA /* PlacementButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */; };
+		FB2506CB25AFE7CB003CBFCA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2506CA25AFE7CB003CBFCA /* Model.swift */; };
+		FB2506CF25AFEDB1003CBFCA /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = FB2506CE25AFEDB0003CBFCA /* FocusEntity */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,9 @@
 		FB03A18E25AFBC34001C2129 /* toy_biplane.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane.usdz; sourceTree = "<group>"; };
 		FB03A18F25AFBC34001C2129 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
 		FB03A19625AFBFCC001C2129 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FB03A19825AFC40C001C2129 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
+		FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonView.swift; sourceTree = "<group>"; };
+		FB2506CA25AFE7CB003CBFCA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2506CF25AFEDB1003CBFCA /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,12 +70,14 @@
 		FB03A17725AFB9C4001C2129 /* ModelPickerApp */ = {
 			isa = PBXGroup;
 			children = (
+				FB03A19B25AFC42D001C2129 /* Views */,
 				FB03A18B25AFBC09001C2129 /* 3DModels */,
 				FB03A17825AFB9C4001C2129 /* AppDelegate.swift */,
 				FB03A17A25AFB9C4001C2129 /* ContentView.swift */,
 				FB03A17E25AFB9C6001C2129 /* Assets.xcassets */,
 				FB03A18325AFB9C6001C2129 /* Info.plist */,
 				FB03A18025AFB9C6001C2129 /* Preview Content */,
+				FB2506CA25AFE7CB003CBFCA /* Model.swift */,
 			);
 			path = ModelPickerApp;
 			sourceTree = "<group>";
@@ -91,6 +101,15 @@
 			path = 3DModels;
 			sourceTree = "<group>";
 		};
+		FB03A19B25AFC42D001C2129 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB03A19825AFC40C001C2129 /* ModelPickerView.swift */,
+				FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +126,9 @@
 			dependencies = (
 			);
 			name = ModelPickerApp;
+			packageProductDependencies = (
+				FB2506CE25AFEDB0003CBFCA /* FocusEntity */,
+			);
 			productName = ModelPickerApp;
 			productReference = FB03A17525AFB9C4001C2129 /* ModelPickerApp.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +156,9 @@
 				Base,
 			);
 			mainGroup = FB03A16C25AFB9C4001C2129;
+			packageReferences = (
+				FB2506CD25AFEDB0003CBFCA /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = FB03A17625AFB9C4001C2129 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -164,7 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2506CB25AFE7CB003CBFCA /* Model.swift in Sources */,
+				FB2506C825AFDC91003CBFCA /* PlacementButtonView.swift in Sources */,
 				FB03A17B25AFB9C4001C2129 /* ContentView.swift in Sources */,
+				FB03A19925AFC40C001C2129 /* ModelPickerView.swift in Sources */,
 				FB03A17925AFB9C4001C2129 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ModelPickerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = J792L8DKQC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ModelPickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ModelPickerApp/Preview Content\"";
+				DEVELOPMENT_TEAM = J792L8DKQC;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ModelPickerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB2506CD25AFEDB0003CBFCA /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB2506CE25AFEDB0003CBFCA /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB2506CD25AFEDB0003CBFCA /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB03A16D25AFB9C4001C2129 /* Project object */;
 }
