@@ -19,6 +19,7 @@
 		FB2506C825AFDC91003CBFCA /* PlacementButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */; };
 		FB2506CB25AFE7CB003CBFCA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2506CA25AFE7CB003CBFCA /* Model.swift */; };
 		FB2506CF25AFEDB1003CBFCA /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = FB2506CE25AFEDB0003CBFCA /* FocusEntity */; };
+		FB2506D225AFEEA2003CBFCA /* FocusARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2506D125AFEEA2003CBFCA /* FocusARView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		FB03A19825AFC40C001C2129 /* ModelPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPickerView.swift; sourceTree = "<group>"; };
 		FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementButtonView.swift; sourceTree = "<group>"; };
 		FB2506CA25AFE7CB003CBFCA /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FB2506D125AFEEA2003CBFCA /* FocusARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusARView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				FB03A19825AFC40C001C2129 /* ModelPickerView.swift */,
 				FB2506C725AFDC91003CBFCA /* PlacementButtonView.swift */,
+				FB2506D125AFEEA2003CBFCA /* FocusARView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				FB2506C825AFDC91003CBFCA /* PlacementButtonView.swift in Sources */,
 				FB03A17B25AFB9C4001C2129 /* ContentView.swift in Sources */,
 				FB03A19925AFC40C001C2129 /* ModelPickerView.swift in Sources */,
+				FB2506D225AFEEA2003CBFCA /* FocusARView.swift in Sources */,
 				FB03A17925AFB9C4001C2129 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
